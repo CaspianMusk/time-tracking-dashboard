@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="contain">
+      <div class="container">
+        <div class="main-menu">
+          <div class="name">
+            <div class="image-container">
+              <img src="./images/image-jeremy.png" alt="Jeremy" />
+            </div>
+            <div class="name-container">
+              <p class="text">Report for</p>
+              <div class="header">Jeremy Robson</div>
+            </div>
+          </div>
+          <div class="time">
+            <div class="daily-button button">Daily</div>
+            <div class="weekly-button button">Weekly</div>
+            <div class="monthly-button button">Monthly</div>
+          </div>
+        </div>
+        <div class="work card">
+          <div class="icon-container">
+            <object data="./images/icon-work.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="card-buttom">
+            <div class="daily box">
+              <div class="content">
+                <h2>Work</h2>
+                <object
+                  data="./images/icon-ellipsis.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <p class="big-text">5hrs</p>
+              <p class="small-text">Yesterday - 7hrs</p>
+            </div>
+            <div class="weekly box">
+              <div class="content">
+                <h2>Work</h2>
+                <object
+                  data="./images/icon-ellipsis.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <p class="big-text">32hrs</p>
+              <p class="small-text">Last Week - 36hrs</p>
+            </div>
+            <div class="monthly box">
+              <div class="content">
+                <h2>Work</h2>
+                <object
+                  data="./images/icon-ellipsis.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <p class="big-text">103hrs</p>
+              <p class="small-text">Last Month - 128hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="play card">
+          <div class="icon-container">
+            <object data="./images/icon-play.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="card-buttom">
+            <div class="daily box">
+              <div class="content">
+                <h2>Play</h2>
+                <object
+                  data="./images/icon-ellipsis.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <p class="big-text">1hr</p>
+              <p class="small-text">Yesterday - 2hrs</p>
+            </div>
+            <div class="weekly box">
+              <div class="content">
+                <h2>Play</h2>
+                <object
+                  data="./images/icon-ellipsis.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <p class="big-text">10hrs</p>
+              <p class="small-text">Last week - 8hrs</p>
+            </div>
+            <div class="monthly box">
+              <div class="content">
+                <h2>Play</h2>
+                <object
+                  data="./images/icon-ellipsis.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <p class="big-text">23hrs</p>
+              <p class="small-text">Last Month - 29hrs</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="study card">
+          <div class="icon-container">
+            <object
+              data="./images/icon-study.svg"
+              type="image/svg+xml"
+            ></object>
+          </div>
+          <div class="card-buttom">
+            <div class="daily box">
+              <div class="content">
+                <h2>Study</h2>
+                <object
+                  data="./images/icon-ellipsis.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <p class="big-text">0hrs</p>
+              <p class="small-text">Yesterday - 1hr</p>
+            </div>
+            <div class="weekly box">
+              <div class="content">
+                <h2>Study</h2>
+                <object
+                  data="./images/icon-ellipsis.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <p class="big-text">4hrs</p>
+              <p class="small-text">Last week - 7hrs</p>
+            </div>
+            <div class="monthly box">
+              <div class="content">
+                <h2>Study</h2>
+                <object
+                  data="./images/icon-ellipsis.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <p class="big-text">13hrs</p>
+              <p class="small-text">Last Month - 19hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="exercise card">
+          <div class="icon-container">
+            <object
+              data="./images/icon-exercise.svg"
+              type="image/svg+xml"
+            ></object>
+          </div>
+          <div class="card-buttom">
+            <div class="daily box">
+              <div class="content">
+                <h2>Exercise</h2>
+                <object
+                  data="./images/icon-ellipsis.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <p class="big-text">1hr</p>
+              <p class="small-text">Yesterday - 1hr</p>
+            </div>
+            <div class="weekly box">
+              <div class="content">
+                <h2>Exercise</h2>
+                <object
+                  data="./images/icon-ellipsis.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <p class="big-text">4hrs</p>
+              <p class="small-text">Last week - 5hrs</p>
+            </div>
+            <div class="monthly box">
+              <div class="content">
+                <h2>Exercise</h2>
+                <object
+                  data="./images/icon-ellipsis.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <p class="big-text">11hrs</p>
+              <p class="small-text">Last Month - 18hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="social card">
+          <div class="icon-container">
+            <object
+              data="./images/icon-social.svg"
+              type="image/svg+xml"
+            ></object>
+          </div>
+          <div class="card-buttom">
+            <div class="daily box">
+              <div class="content">
+                <h2>Social</h2>
+                <object
+                  data="./images/icon-ellipsis.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <p class="big-text">1hr</p>
+              <p class="small-text">Yesterday - 3hrs</p>
+            </div>
+            <div class="weekly box">
+              <div class="content">
+                <h2>Social</h2>
+                <object
+                  data="./images/icon-ellipsis.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <p class="big-text">5hrs</p>
+              <p class="small-text">Last week - 10hrs</p>
+            </div>
+            <div class="monthly box">
+              <div class="content">
+                <h2>Social</h2>
+                <object
+                  data="./images/icon-ellipsis.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <p class="big-text">21hrs</p>
+              <p class="small-text">Last Month - 23hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="self-care card">
+          <div class="icon-container">
+            <object
+              data="./images/icon-self-care.svg"
+              type="image/svg+xml"
+            ></object>
+          </div>
+          <div class="card-buttom">
+            <div class="daily box">
+              <div class="content">
+                <h2>Self Care</h2>
+                <object
+                  data="./images/icon-ellipsis.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <p class="big-text">0hrs</p>
+              <p class="small-text">Yesterday - 1hr</p>
+            </div>
+            <div class="weekly box">
+              <div class="content">
+                <h2>Self Care</h2>
+                <object
+                  data="./images/icon-ellipsis.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <p class="big-text">2hrs</p>
+              <p class="small-text">Last Week - 2hrs</p>
+            </div>
+            <div class="monthly box">
+              <div class="content">
+                <h2>Self Care</h2>
+                <object
+                  data="./images/icon-ellipsis.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <p class="big-text">7hrs</p>
+              <p class="small-text">Last Month - 11hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://t.me/Caspian_Musk">Caspian</a>.
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
