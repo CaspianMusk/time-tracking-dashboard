@@ -70,6 +70,7 @@ body {
   grid-area: exercise;
   background-color: hsl(145, 58%, 55%);
 }
+
 .social {
   grid-area: social;
   background-color: hsl(264, 64%, 52%);
@@ -114,16 +115,17 @@ body {
   margin: 0;
   padding: 0;
   gap: 0;
+  border-radius: 18px;
+  overflow: hidden;
 }
 
 .card-buttom {
   background-color: hsl(235, 46%, 20%);
   width: 100%;
-  height: 67%;
+  height: 115%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 18px;
 }
 
 .card-buttom:hover {
@@ -131,8 +133,25 @@ body {
   cursor: pointer;
 }
 
+object{
+  position: relative;
+  top: -8px;
+  left: 8px;
+  overflow: hidden;
+}
+
+.exercise > .icon-container > object {
+  position: relative;
+  top: -6px;
+  left: 4px;
+}
+
 object:hover{
   cursor: pointer;
+}
+
+svg {
+  height: 100px !important;
 }
 
 .box {
@@ -196,6 +215,7 @@ img{
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
+  overflow: hidden;
 }
 
 .weekly {
@@ -251,7 +271,12 @@ img{
 }
 
 .card-buttom{
-  height: 21vh;
+  height: 95%;
+}
+
+.icon-container{
+  position: relative;
+  top: -5px;
 }
 
 }
